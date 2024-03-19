@@ -12,15 +12,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  }
 
 
 .logo img {
-  position: absolute;
+  position:fixed;
   height: 200px; 
   width: 200px;
+  transition: opacity 0.1s;
+  border: transparent;
+  border-radius: 70px;
+  opacity: 0.80;
 }
 
+.logo img.hidden {
+  opacity: 0; 
+}
 
 nav ul {
   list-style: none;
@@ -45,7 +52,6 @@ nav ul li a:hover {
 
 
 body {
-  background-color: #161616; 
   color: #332727; 
   background-color: #FFFFFF;
   
@@ -63,6 +69,12 @@ border: transparent;
 border-radius: 360px;
 }
 
+
+.image-container img:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+  transition: 0.2s;
+}
+
 main content {
 text-align: center;
  max-width: 800px;
@@ -72,13 +84,14 @@ text-align: center;
 }
 
  h1 {
-  font-size: 24px;
+  font-size: x-large;
   color: #333;
   margin-bottom: 20px;
   text-align: center;
 }
 
  p {
+  color: #181717;
   text-align: center;
   max-width: 100%;
   margin-bottom: 20px;
