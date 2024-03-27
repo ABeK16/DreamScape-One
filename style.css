@@ -20,7 +20,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Ensure header is above other content */
+  z-index: 1000;
 }
 
 .logo img {
@@ -28,12 +28,24 @@ header {
 }
 
 nav {
-  background-color: #424141; /* Background color for the navigation */
-  color: #fff; /* Text color for the navigation */
-  padding: 10px 20px; /* Padding for the navigation links */
+  background-color: #424141; /
+  color: #fff;
+  padding: 10px 20px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+a:hover {
+  color: #ffcc4a;
+}
+
+.nav-links {
+  transition: opacity 0.3s ease;
+}
+
+.nav-links.active {
+  opacity: 1;
 }
 
 .hamburger {
