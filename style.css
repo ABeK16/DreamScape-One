@@ -60,15 +60,15 @@ nav ul li a {
 }
 
 .image-container {
-  display: grid;
+  display: column;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
 }
 
 .images {
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 400px;
 }
 
 p {
