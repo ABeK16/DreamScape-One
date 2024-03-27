@@ -11,12 +11,16 @@ body {
 }
 
 header {
-  color:#f0f0f0;
-  background-color: #404142;
+  color: #f0f0f0;
+  background-color: #424141;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure header is above other content */
 }
 
 .logo img {
@@ -24,7 +28,12 @@ header {
 }
 
 nav {
-  display: block;
+  background-color: #424141; /* Background color for the navigation */
+  color: #fff; /* Text color for the navigation */
+  padding: 10px 20px; /* Padding for the navigation links */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hamburger {
