@@ -14,8 +14,14 @@
     <div class="logo">
       <img src="./images/8-7HObf8aYiAzoykN.png" alt="Amusement Park Logo">
     </div>
+    <h1>Dreamscape</h1>
     <nav>
-      <ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#attractions">Attractions</a></li>
         <li><a href="#about">About</a></li>
@@ -24,25 +30,50 @@
     </nav>
   </header>
   <section id="main-content">
-    <h1>Welcome to Dreamscape One</h1>
-    
-    <br>
+    <div class="hero-section">
+      <img src="./images/herolandscape2.jpg" alt="model image 1" class="hero-image">
+    </div>
+<br><br><br><br><br>
+<div class="body-text-container">
+    <h2>The Vision</h2>
+<br>
+    <p1>DreamScape is an exciting environmentally responsible project that brings together the best in entertainment,
+      fun and hospitality - a year round, world class family-themed facility.
+
+      Focused on our environment and climate issues DreamScape One is a vision of the way forward for society based on
+      renewable energy sources, sustainability and a carbonless footprint. At a footprint of 500 acres for the enclosed
+      environment with a minimum ceiling height of 160 feet, DreamScape (short form) is building the mega structures of
+      the future.</p1> <br>
+<br>
+    <p2>The DreamScape business model is based on everything under one roof, protected from the outside elements
+      year-round. The concept is unique just on its sheer size and the aspects of its self-sustainability before adding
+      in our advance marketing campaign and futuristic technology. For all intents and purposes DS1 (acronym) is being
+      designed as a Theme Park complimented with the right balance of added features, which will help to offset the high
+      cost of building such a structure.</p2> <br> <br>
+
+    <p3>Theme Parks have an established record of longevity and profiting in any economy, especially being year-round.
+      DreamScape is about people; we can accommodate a large amount of residency in addition to a tremendous volume of
+      vacationers/tourists making this a global destination. The time has come in our evolution cycle to provide
+      enhanced, safe communities that confronts our environment and climate change issues with a positive impact.</p3>
+      </div>
+<br><br> <br><br>
     <div class="image-container">
-      <img src="./images/image-7.png" width="100px" height="100px" alt="model image 2" class="images">
-      <img src="./images/image-1.png" alt="model image 1" class="images">
-      <img src="./images/image-13.png" width="100px" height="100px" alt="model image 2" class="images">
-  </div>
-
-    <p>Dreamscape One is a sustainable, generational global project related to Climate Change. DS1 Center Piece is a
-      Fully Enclosed Superstructure with a minimum roof height of 160 feet built on a footprint of 500 acres.
-      It sits within the TEN THOUSAND ACRE (10,000) CITY known as DS1.</p><br>
-
-       <div class="image-container">
-        <img src="./images/image-4.png" width="100px" height="100px" alt="model image 2" class="images">
-        <img src="./images/image-2.png" alt="model image 2" class="images">
-        <img src="./images/image-12.png" width="100px" height="100px" alt="model image 2" class="images">
+      <img src="./images/image-4.png" alt="model image 2" class="images">
+      <img src="./images/image-2.png" alt="model image 2" class="images">
+      <img src="./images/image-12.png" alt="model image 2" class="images">
     </div>
   </section>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-links');
+      navMenu.classList.toggle('active');
+
+      const hamburger = document.querySelector('.hamburger');
+      hamburger.classList.toggle('change');
+    }
+  </script>
 </body>
+
 
 </html>
